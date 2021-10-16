@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Selected Image</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <style type="text/css">
+     .special_btn {
+            background-image: url("https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/camera-512.png");
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 360px;
+            background-size: cover;
+            background-position: center center;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        #input_btn {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="POST" action="" enctype="multipart/form-data">
+        <div class="special_btn"></div>
+        <input id="input_btn" name="image" type='file' />
+    </form>
+
+    <script>
+        $('.special_btn').bind("click", function () {
+            $('#input_btn').click();
+        });
+
+        $('input[type="file"]').bind("change", function(){
+   var path = URL.createObjectURL(event.target.files[0]);
+   $('.special_btn').css('background-image','url('+ path +')');
+  });
+    </script>
+
+</body>
+</html>
