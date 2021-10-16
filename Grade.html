@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script>
+			function sum()
+			{
+				var input1,input2,result;
+				input1=f1.data1.value;
+				input1=parseInt(input1);
+				input2=f1.data2.value;
+				input2=parseInt(input2);
+				input3=f1.data2.value;
+				input3=parseInt(input2);
+				result=input1+input2+input3;
+				if(result>80)
+				{
+					alert("grade is a")
+				}
+				else (result>70)
+				{
+					alert("grade is b")
+				}
+				
+				
+			}
+			 
+		</script>
+	</head>
+	<body>
+		<center>
+		<form name="f1">
+			<label>ISA 1</label>
+			<input type="text" name="data1">
+			<br>
+			<label>ISA 2</label>
+			<input type="text" name="data2">
+			<br>
+			<label>ESA 1</label>
+			<input type="text" name="data3">
+			<br>
+			<input type="submit" value="evaluate" onclick="sum()">
+			 
+		</form>
+	</center>
+	</body>
+</html>
