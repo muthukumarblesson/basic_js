@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="formid">
+    <center>
+		<h1>Please Select The..</h1>
+	<h1></h1>
+     <!--<input type="radio" name="gender" value="Male">Male <br> -->
+     <!-- <input type="radio" name="gender" value="Female">Female <br> -->
+     <!-- <input type="radio" name="gender" value="Other">Other <br> -->
+
+	 
+     <hr>
+     <br>
+     <select name="ddlselect" onchange="getadd()">
+       <option value="j">Java</option>
+
+       <option  value="Js">Java-Script</option>
+
+       <option  value="P">Python</option>
+
+       <option  value="c#">C#</option>
+
+       <option value="C++">C++</option>
+
+     </select> <br> <br>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+     <hr>
+   </form>
+  <label id="lblsub"></label>
+  <script>
+  	function getadd()
+    {
+      document.getElementById('lblsub').innerHTML=("The selected Course is :<b style='color:red;'>"+formid.ddlselect[formid.ddlselect.selectedIndex].text+' <b>')
+    }
+	
+	
+	
+	
+  </script>
+  </center>
+<hr>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script>
+			function largestnum()
+			{
+				var num1;
+				num1 = Number(document.getElementById("N").value);
+				
+
+				if(num1>18 && num1<35)
+				{
+					window.alert(num1+" eligible candidate");
+				}
+				
+				else
+				{
+					window.alert(num1+" candidate is not eligible");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Check candidate is eligible or not </h1>
+		<br>
+		enter the candidate age <input type="text" id="N"></input><br>
+		
+<button onclick="largestnum()">submit</button>
+	</body>
+</html>

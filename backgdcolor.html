@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body style="text-align: center;">
+
+<h1 style="text-align: center;">Click Here To Change Background_Color Of The Webpage...</h1>
+	<br><br>
+	<input class="tab1" type="color" id="colorInputColor">
+     <input type="button" id="colorButton" value="Click to change the color" 
+     onclick="changeColor()">
+	<input type="text" id="colorInputText">
+
+<script type="text/javascript">
+	function changeColor(){
+		let color=document.getElementById('colorInputColor').value;
+		document.body.style.backgroundColor=color;
+		document.getElementById('colorInputText').value=color;
+	}
+</script>
+</body>
+</html>
